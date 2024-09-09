@@ -83,7 +83,7 @@ const mostrarGastos = () => {
         compara.innerHTML=`${(tcomida-tGastos).toFixed(2)} Cal`;
     }
     else{
-        compara.innerHTML= `${(0).toFixed(2)}C`;
+        compara.innerHTML= `${(0).toFixed(2)} Cal`;
     }
 
     document.getElementById('listaGastos').innerHTML = gastosHTML || "<b>NO HAY ACTIVIDADES</b>";
