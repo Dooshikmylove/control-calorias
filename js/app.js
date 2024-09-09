@@ -69,18 +69,18 @@ const mostrarGastos = () => {
 
     if(tGastos>0){
         let totalDisponible = document.querySelector("#totalDisponible");
-        totalDisponible.innerHTML=`${tGastos.toFixed(2)}C`;
+        totalDisponible.innerHTML=`${tGastos.toFixed(2)} Cal`;
     }
     if(tcomida>0){
         let totalPresupuesto = document.querySelector("#totalPresupuesto");
-        totalPresupuesto.innerHTML=`${tcomida.toFixed(2)}C`;
+        totalPresupuesto.innerHTML=`${tcomida.toFixed(2)} Cal`;
     }  
     let compara= document.querySelector("#totalGastos") ;
     if(tcomida> tGastos){
-        compara.innerHTML=`${(tcomida-tGastos).toFixed(2)}C`;
+        compara.innerHTML=`${(tcomida-tGastos).toFixed(2)} Cal`;
     }else
     if(tcomida<tGastos){
-        compara.innerHTML=`${(tcomida-tGastos).toFixed(2)}C`;
+        compara.innerHTML=`${(tcomida-tGastos).toFixed(2)} Cal`;
     }
     else{
         compara.innerHTML= `${(0).toFixed(2)}C`;
